@@ -779,7 +779,7 @@ main {
           recScore = Math.round(r0.score.recovery_score || 0);
           hrv = r0.score.hrv_rmssd_milli != null ? Math.round(r0.score.hrv_rmssd_milli) : null;
           rhr = r0.score.resting_heart_rate != null ? Math.round(r0.score.resting_heart_rate) : null;
-          skin = r0.score.skin_temp_celsius != null ? r0.score.skin_temp_celsius : null;
+          skin = r0.score.skin_temp_fahrenheit != null ? r0.score.skin_temp_fahrenheit : null;
           spo2 = r0.score.spo2_percentage != null ? r0.score.spo2_percentage : null;
         }
 
@@ -851,7 +851,7 @@ main {
         const anyBio = (skin != null) || (spo2 != null) || (resp != null);
         if (anyBio) {
           $('whBio').style.display = '';
-          if (skin != null) { $('whSkin').textContent = Number(skin).toFixed(1) + '°C'; zone($('whZoneSkin'), tempZone(skin)); }
+          if (skin != null) { $('whSkin').textContent = Number(skin).toFixed(1) + '°F'; zone($('whZoneSkin'), tempZone(skin)); }
           if (spo2 != null) { $('whSpo2').textContent = Number(spo2).toFixed(1) + '%'; zone($('whZoneSpo2'), spo2Zone(spo2)); }
           if (resp != null) { $('whResp').textContent = resp + ' br/min'; zone($('whZoneResp'), respZone(Number(resp))); }
         }

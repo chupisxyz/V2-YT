@@ -675,7 +675,7 @@ main {
   <script>
   (function () {
     const KEY = 'whoop_tokens_v1';
-    const CLIENT_ID = '3b9d1b01-31fb-4bd8-b18c-c7fa27deed2f';
+    const CLIENT_ID = '62c043bc-0627-4112-bcc1-949d2c01806e';
     const REDIRECT  = window.location.origin + '/api/whoop-callback';
     const SCOPES    = 'read:recovery read:sleep read:workout read:cycles read:profile read:body_measurement offline';
 
@@ -696,8 +696,8 @@ main {
 
     $('whConnectBtn').addEventListener('click', () => {
       const url = 'https://api.prod.whoop.com/oauth/oauth2/auth'
-        + '?client_id=ad6aef8d-d16e-4596-ad0c-26d9039205a2'     + encodeURIComponent(CLIENT_ID)
-        + '&redirect_uri=https://v2-yt-zeta.vercel.app/api/whoop-callback'  + encodeURIComponent(REDIRECT)
+        + '?client_id='     + encodeURIComponent(CLIENT_ID)
+        + '&redirect_uri='  + encodeURIComponent(REDIRECT)
         + '&response_type=code'
         + '&scope='         + encodeURIComponent(SCOPES)
         + '&state='         + Math.random().toString(36).slice(2);

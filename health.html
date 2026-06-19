@@ -920,7 +920,7 @@ main {
         </div>
         <input id="stackAddDose" type="text" placeholder="Dose (e.g. 1 cap)" class="stack-input" />
         <select id="stackAddWindow" class="stack-input stack-select">
-          <option value="morning">Morning</option>
+          <option value="">Morning</option>
           <option value="lunch">Lunch</option>
           <option value="evening">Evening</option>
           <option value="anytime">Anytime</option>
@@ -957,14 +957,7 @@ main {
   const TEMPLATE_VERSION = 5;
 
   const STACK_DEFAULTS = [
-    { id: 'm1', name: 'XXXXX - Supplement of choice', dose: '', window: 'morning', note: 'how much MG, meal times, any data below', tag: null,    ordered: true  },
-    { id: 'm2', name: 'XXXXX - Supplement of choice', dose: '', window: 'morning', note: 'how much MG, meal times, any data below', tag: 'stack', ordered: true  },
-    { id: 'm3', name: 'XXXXX - Supplement of choice', dose: '', window: 'morning', note: 'how much MG, meal times, any data below', tag: null,    ordered: true  },
-    { id: 'l1', name: 'XXXXX - Supplement of choice', dose: '', window: 'lunch',   note: 'how much MG, meal times, any data below', tag: null,    ordered: true  },
-    { id: 'l2', name: 'XXXXX - Supplement of choice', dose: '', window: 'lunch',   note: 'how much MG, meal times, any data below', tag: null,    ordered: true  },
-    { id: 'e1', name: 'XXXXX - Supplement of choice', dose: '', window: 'evening', note: 'how much MG, meal times, any data below', tag: null,    ordered: true  },
-    { id: 'e2', name: 'XXXXX - Supplement of choice', dose: '', window: 'evening', note: 'how much MG, meal times, any data below', tag: 'not-ordered', ordered: false },
-    { id: 'e3', name: 'XXXXX - Supplement of choice', dose: '', window: 'evening', note: 'how much MG, meal times, any data below', tag: null,    ordered: true  },
+    { id: 'a1', name: 'Vitamian - Airborne', dose: '750mg', window: 'anytime', note: '750mg Take when Needed', tag: null,    ordered: true  },
   ];
 
   const STACK_WINDOWS = [
